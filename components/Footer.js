@@ -6,8 +6,8 @@ import { WHATSAPP_LINK } from "../lib/site";
 export default function Footer() {
   return (
     <footer className="bg-ink text-ivory mt-32">
-      <div className="container-zayti py-16 grid gap-12 md:grid-cols-[1.4fr_1fr_1fr]">
-        <div>
+      <div className="container-zayti py-16 grid gap-12 sm:grid-cols-2 md:grid-cols-[1.4fr_1fr_1fr_1fr]">
+        <div className="sm:col-span-2 md:col-span-1">
           <div className="flex items-center gap-3 mb-4">
             <Image
               src="/logo.png"
@@ -47,6 +47,42 @@ export default function Footer() {
               >
                 <WhatsAppIcon className="w-4 h-4" />
                 Chat on WhatsApp
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <p className="text-sm tracking-wide text-bronze mb-4">Follow us</p>
+          <ul className="space-y-2 text-ivory/80">
+            <li>
+              <a
+                href="https://instagram.com/zayti.ng"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-bronze"
+              >
+                Instagram <span className="ml-1 text-ivory/50">zayti.ng</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://tiktok.com/@zayti.ng"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-bronze"
+              >
+                TikTok <span className="ml-1 text-ivory/50">zayti.ng</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://facebook.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-bronze"
+              >
+                Facebook <span className="ml-1 text-ivory/50">Zayti Oil</span>
               </a>
             </li>
           </ul>

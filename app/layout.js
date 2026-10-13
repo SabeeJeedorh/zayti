@@ -2,6 +2,7 @@ import { Fraunces, Work_Sans } from "next/font/google";
 import "./globals.css";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import { CartProvider } from "../components/CartProvider";
 
 const fraunces = Fraunces({
   subsets: ["latin"],
@@ -25,9 +26,11 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${fraunces.variable} ${workSans.variable}`}>
       <body className="font-body antialiased">
-        <Navbar />
-        <main>{children}</main>
-        <Footer />
+        <CartProvider>
+          <Navbar />
+          <main>{children}</main>
+          <Footer />
+        </CartProvider>
       </body>
     </html>
   );

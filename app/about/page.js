@@ -37,14 +37,14 @@ export default function About() {
             </p>
             <DividerDiamond className="mb-6" />
             <h1 className="font-display text-4xl md:text-5xl leading-tight text-ink max-w-lg">
-              A kitchen habit that turned into Zayti.
-            </h1>
+            A love for coconut that grew into Zayti.            </h1>
             <p className="mt-6 text-ink/70 leading-relaxed max-w-md">
-              Sabee&apos;a started pressing coconut oil at home, the way her
-              own family always had — for cooking, for skin, for hair. What
-              she made for her household, neighbours started asking to buy.
-              Zayti is that same oil, made at a slightly larger table.
-            </p>
+  My love for coconut and its beautiful natural scent inspired me to start
+  Zayti. My mum has been selling coconut oil, and growing up around it
+  made me appreciate its simplicity and versatility. What began as a
+  personal love for coconut has grown into a passion for sharing its
+  goodness with others.
+</p>
           </div>
           <OilDrop className="w-56 md:w-72 justify-self-center" />
         </div>
@@ -97,7 +97,8 @@ export default function About() {
               &quot;I still taste-test every batch myself before it&apos;s
               bottled.&quot;
             </p>
-            <p className="text-ivory/70">— Sabee&apos;a, founder</p>
+            <p className="text-ivory/70">— Sabee&apos;a, Jeedorh 
+             (founder)</p>
           </div>
         </div>
       </section>

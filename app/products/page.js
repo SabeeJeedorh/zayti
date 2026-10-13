@@ -21,7 +21,7 @@ export default function Products() {
             Every jar, pressed from the same fruit.
           </h1>
           <p className="mt-5 text-ink/70 max-w-lg leading-relaxed">
-            Four ways to bring Zayti into your kitchen and bathroom — the oil
+            Four ways to bring Zayti into your kitchen, bedroom and bathroom and the oil
             itself never changes, only the size of the jar.
           </p>
         </div>
