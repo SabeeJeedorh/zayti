@@ -47,14 +47,7 @@ export default function Home() {
         <br />
         bottled.
       </h1>
-{/* 
-      <p className="mt-7 text-[18px] tracking-[0.12em] text-[#60371d]">
-        Pure
-        <span className="mx-3 text-[#b47a28]">•</span>
-        Natural
-        <span className="mx-3 text-[#b47a28]">•</span>
-        Versatile
-      </p> */}
+
 
       <p className="mt-7 max-w-[430px] text-[16px] leading-[1.7] text-[#704e34]">
         Zayti is cold-pressed coconut oil used for
@@ -74,23 +67,7 @@ export default function Home() {
 
     </div>
 
-    {/* zayti hero bottle */}
-    <div className="relative flex h-full min-h-[700px] items-center justify-center lg:justify-end">
-
-      <div className="relative h-[620px] w-[390px] sm:h-[680px] sm:w-[430px] lg:mr-[-10px] xl:mr-[20px]">
-
-        <Image
-          src="/images/bottle.png"
-          alt="Zayti Natural Coconut Oil bottle"
-          fill
-          priority
-          sizes="(max-width: 768px) 390px, 430px"
-          className="object-contain drop-shadow-[0_30px_30px_rgba(65,38,19,.28)]"
-        />
-
-      </div>
-    </div>
-
+  
   </div>
 </section>
 <PureCare />
