@@ -15,7 +15,7 @@ export default function ContactForm() {
       <div className="bg-paper border border-ink/10 rounded-2xl p-10 text-center">
         <h3 className="font-display text-2xl text-ink mb-2">Message sent</h3>
         <p className="text-ink/70">
-          We usually reply within a day or two. Thanks for reaching out.
+          We usually reply within an hour. Thanks for reaching out.
         </p>
       </div>
     );
@@ -55,7 +55,7 @@ export default function ContactForm() {
           id="message"
           required
           rows={5}
-          className="w-full bg-paper border border-ink/20 rounded-xl px-4 py-3 text-ink placeholder:text-ink/35 focus:border-bronze-dark outline-none resize-none"
+          className="w-full bg-paper border border-ink/20 rounded-xl px-4 pyj-3 text-ink placeholder:text-ink/35 focus:border-bronze-dark outline-none resize-none"
           placeholder="What can we help with?"
         />
       </div>

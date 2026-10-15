@@ -40,11 +40,11 @@ export default function Contact() {
           <dl className="space-y-3 text-ink/75">
             <div className="flex gap-3">
               <dt className="text-bronze-dark w-16 shrink-0">Email</dt>
-              <dd>hello@zayti.co</dd>
+              <dd>zaytinaturals@gmail.com</dd>
             </div>
             <div className="flex gap-3">
               <dt className="text-bronze-dark w-16 shrink-0">Based in</dt>
-              <dd>Lagos, Nigeria</dd>
+              <dd>Bauchi, Nigeria</dd>
             </div>
           </dl>
         </div>
