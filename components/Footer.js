@@ -1,120 +1,82 @@
-import Link from "next/link";
-import Image from "next/image";
-import { WhatsAppIcon } from "./icons";
-import { WHATSAPP_LINK } from "../lib/site";
+import Link from "next/link"
+import { WhatsAppIcon } from "./icons"
+import { WHATSAPP_LINK, navLinks } from "../lib/site"
+import BrandMark from "./BrandMark"
 
 export default function Footer() {
   return (
-    <footer className="mt-24 bg-[#5C371B] text-[#FDFBF6]">
+    <footer className="bg-[#5A3018] text-[#FBF6ED]">
       <div className="mx-auto max-w-[1400px] px-6 py-16 sm:px-10 lg:px-16 lg:py-20">
-        <div className="grid gap-12 border-b border-[#DDD0BB]/20 pb-12 md:grid-cols-[1.4fr_1fr_1fr] md:gap-16">
-          {/* Brand */}
+        <div className="grid gap-12 border-b border-[#FBF6ED]/15 pb-12 md:grid-cols-[1.4fr_1fr_1fr] md:gap-16">
           <div className="max-w-sm">
-            <Link
-              href="/"
-              aria-label="Zayti Naturals home"
-              className="inline-flex flex-col items-start"
-            >
-              <Image
-                src="/images/logo.png"
-                alt="Zayti Naturals"
-                width={105}
-                height={105}
-                className="h-[88px] w-[88px] object-contain"
-              />
-
-              <span className="mt-3 font-serif text-3xl tracking-wide">
-                Zayti Naturals
-              </span>
+            <Link href="/" aria-label="Zayti Naturals home" className="inline-flex">
+              <BrandMark className="w-[210px]" sizes="210px" />
             </Link>
-
-            <p className="mt-4 max-w-xs text-sm leading-7 text-[#FDFBF6]/70">
-              Nature, bottled with care. Pure coconut oil for your everyday
-              rituals, from your kitchen to your self-care routine.
+            <p className="mt-5 max-w-xs text-sm leading-7 text-[#FBF6ED]/75">
+              Zayti Naturals by Sabee&apos;a. Pure coconut oil and pure shea
+              butter for the kitchen, the skin, and the hair.
             </p>
           </div>
 
-          {/* Explore */}
           <div>
-            <h2 className="mb-5 text-xs font-medium uppercase tracking-[0.25em] text-[#DDD0BB]">
+            <h2 className="mb-5 text-xs font-medium uppercase tracking-[0.25em] text-[#C38738]">
               Explore
             </h2>
-
-            <ul className="space-y-4 text-sm text-[#FDFBF6]/80">
-              <li>
-                <Link
-                  href="/products"
-                  className="transition-colors duration-300 hover:text-[#DDD0BB]"
-                >
-                  Shop our collection
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/about"
-                  className="transition-colors duration-300 hover:text-[#DDD0BB]"
-                >
-                  Our story
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/contact"
-                  className="transition-colors duration-300 hover:text-[#DDD0BB]"
-                >
-                  Contact us
-                </Link>
-              </li>
+            <ul className="space-y-4 text-sm text-[#FBF6ED]/85">
+              {navLinks.map((link) => (
+                <li key={link.href}>
+                  <Link
+                    href={link.href}
+                    className="transition-colors duration-300 hover:text-[#C38738]"
+                  >
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
 
-          {/* Connect */}
           <div>
-            <h2 className="mb-5 text-xs font-medium uppercase tracking-[0.25em] text-[#DDD0BB]">
+            <h2 className="mb-5 text-xs font-medium uppercase tracking-[0.25em] text-[#C38738]">
               Stay Connected
             </h2>
-
             <a
               href={WHATSAPP_LINK()}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-3 text-sm text-[#FDFBF6]/85 transition-colors duration-300 hover:text-[#DDD0BB]"
+              className="inline-flex items-center gap-3 text-sm text-[#FBF6ED]/90 transition-colors duration-300 hover:text-[#C38738]"
             >
               <WhatsAppIcon className="h-5 w-5" />
               Chat with us on WhatsApp
             </a>
-
             <a
               href="mailto:zaytinaturals@gmail.com"
-              className="mt-4 block text-sm text-[#FDFBF6]/70 transition-colors duration-300 hover:text-[#DDD0BB]"
+              className="mt-4 block text-sm text-[#FBF6ED]/75 transition-colors duration-300 hover:text-[#C38738]"
             >
               zaytinaturals@gmail.com
             </a>
-
             <div className="mt-6 flex flex-wrap gap-x-5 gap-y-3 text-sm">
               <a
                 href="https://instagram.com/zayti.ng"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="transition-colors duration-300 hover:text-[#DDD0BB]"
+                className="transition-colors duration-300 hover:text-[#C38738]"
               >
                 Instagram
               </a>
-
               <a
                 href="https://tiktok.com/@zayti.ng"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="transition-colors duration-300 hover:text-[#DDD0BB]"
+                className="transition-colors duration-300 hover:text-[#C38738]"
               >
                 TikTok
               </a>
-
               <a
                 href="https://facebook.com/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="transition-colors duration-300 hover:text-[#DDD0BB]"
+                className="transition-colors duration-300 hover:text-[#C38738]"
               >
                 Facebook
               </a>
@@ -122,14 +84,10 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="flex flex-col gap-3 pt-6 text-xs tracking-wide text-[#FDFBF6]/55 sm:flex-row sm:items-center sm:justify-between">
-          <p>
-            © {new Date().getFullYear()} Zayti Naturals. All rights reserved.
-          </p>
-
-          
-        </div>
+        <p className="pt-6 text-xs tracking-wide text-[#FBF6ED]/55">
+          © {new Date().getFullYear()} Zayti Naturals by Sabee&apos;a. All rights reserved.
+        </p>
       </div>
     </footer>
-  );
+  )
 }

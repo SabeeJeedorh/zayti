@@ -7,13 +7,21 @@ html {
 }
 
 body {
-  background-color: #F8F3E7;
-  color: #3B2817;
+  background-color: #FAF7F0;
+  color: #683519;
+  font-family: var(--font-worksans), sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-fraunces), Georgia, serif;
 }
 
 ::selection {
-  background-color: #B8863E;
-  color: #F8F3E7;
+  background-color: #C38738;
+  color: #FAF7F0;
 }
 
 /* visible keyboard focus */
@@ -21,7 +29,7 @@ a:focus-visible,
 button:focus-visible,
 input:focus-visible,
 textarea:focus-visible {
-  outline: 2px solid #8C5E23;
+  outline: 2px solid #5A3018;
   outline-offset: 3px;
 }
 

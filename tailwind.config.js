@@ -7,17 +7,27 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        ivory: "#F8F3E7",
-        paper: "#FFFCF5",
-        ink: "#3B2817",
-        bronze: "#B8863E",
-        "bronze-dark": "#8C5E23",
-        olive: "#5B6B4F",
-        "olive-dark": "#3F4B37",
+        ivory: "#FAF7F0",
+        paper: "#FBF6ED",
+        ink: "#683519",
+        bronze: "#C38738",
+        "bronze-dark": "#5A3018",
+        olive: "#704E34",
+        "olive-dark": "#5A3018",
+        zayti: {
+          brown: "#683519",
+          deep: "#5A3018",
+          gold: "#C38738",
+          cream: "#FAF7F0",
+          soft: "#FBF6ED",
+          taupe: "#704E34",
+        },
       },
       fontFamily: {
-        display: ["var(--font-fraunces)", "serif"],
+        display: ["var(--font-fraunces)", "Georgia", "serif"],
+        serif: ["var(--font-fraunces)", "Georgia", "serif"],
         body: ["var(--font-worksans)", "sans-serif"],
+        sans: ["var(--font-worksans)", "sans-serif"],
       },
       backgroundImage: {
         grain: "url('/grain.svg')",

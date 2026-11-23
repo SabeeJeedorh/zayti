@@ -1,6 +1,6 @@
-# Zayti — Natural Coconut Oil
+# Zayti Naturals by Sabee'a
 
-A Next.js 14 (App Router) + Tailwind CSS site for Zayti, a coconut oil brand by Sabee'a.
+A Next.js 14 (App Router) + Tailwind CSS shop for Zayti Naturals. The collection is natural coconut oil and pure shea butter.
 
 ## Getting started
 
@@ -13,10 +13,13 @@ Then open http://localhost:3000.
 
 ## Pages
 
-- `/` — Home (hero, benefits, featured products, brand story teaser)
-- `/products` — Full product range
-- `/about` — Brand story and process
-- `/contact` — Contact form
+- `/` — Home
+- `/products` — Shop, grouped by category
+- `/coconut-oil` — Natural coconut oil
+- `/shea-butter` — Shea butter
+- `/about` — About Us
+- `/contact` — Contact
+- `/cart` — Cart and WhatsApp checkout
 
 ## Structure
 

@@ -87,6 +87,7 @@ export function CartProvider({ children }) {
       value={{
         cart,
         cartCount,
+        isLoaded,
         addToCart,
         removeFromCart,
         updateQuantity,
